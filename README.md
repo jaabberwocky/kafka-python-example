@@ -53,7 +53,9 @@ In separate command shells, run the following:
 
 1. `python consumer.py`
 
-This is a consumer of the messages sent through Kafka. Simple processing of message length is shown to indicate what you can do with each message. Press CTRL + C to send KeyboardInterrupt to exit the process. Alternatively, close the shell session.
+This is a consumer of the messages sent through Kafka. Simple writing to CSV of the streams is implemented. 
+
+Note: Press CTRL + C to send KeyboardInterrupt to exit the process. Alternatively, close the shell session.
 
 2. `python producer.py`
 
