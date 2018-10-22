@@ -9,7 +9,7 @@ Kafka is a distributed messaging system. The architecture is a publish-subscribe
 Common use-cases: 
 
 - messaging between applications, where you can have applications "talk" to each using messages
-- data ETL from source systems to target destinations, thereby processing information on a *streaming* basis, rather than in batches as with your traditional ETL jobs
+- data processing pipelines from source systems to target destinations, thereby processing information on a *streaming* basis, rather than in *batches* as with your traditional ETL jobs
 
 ![kafka architecture](https://www.confluent.io/wp-content/uploads/Screenshot-2017-07-19-19.14.28-1024x626.png)
 
