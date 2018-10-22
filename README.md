@@ -1,8 +1,19 @@
-# Instructions
+# Simple tutorial in Python for Kafka
 
-*lifted from Apache website*
+Using Java/Scala to work with Kafka is hard (especially someone like me). *Ta-da!*
 
-## Step 1: Download the code
+## What is Kafka?
+
+Kafka is a distributed messaging system. The architecture is a publish-subscribe model, where **consumers** read messages from **topics** that they have subscribed, where the messages are sent by **producers**. 
+
+Common use-cases: 
+
+- messaging between applications, where you can have applications "talk" to each using messages
+- data ETL from source systems to target destinations, thereby processing information on a *streaming* basis, rather than in batches as with your traditional ETL jobs
+
+There is a lot more complexity under the hood, and I suggest you read the [official docs](https://kafka.apache.org/documentation/) for more information.
+
+## Step 1: Download the distribution
 Download the 2.0.0 release and un-tar it.
 	
 > tar -xzf kafka_2.11-2.0.0.tgz
@@ -39,13 +50,16 @@ We can now see that topic if we run the list topic command:
 
 ## Step 4: 
 
-In a separate command shell, run the following:
+In separate command shells, run the following:
 
 1. `python consumer.py`
 
-This is a consumer of the messages sent through Kafka. Simple processing of message length is shown to indicate what you can do with each message.
+This is a consumer of the messages sent through Kafka. Simple processing of message length is shown to indicate what you can do with each message. Press CTRL + C to send KeyboardInterrupt to exit the process. Alternatively, close the 
 
 2. `python producer.py`
 
 Producer of messages. Key in any valid string to send. Type "quit" to exit.
+
+
+You should now see the shell running `consumer.py` displaying the messages from Kafka!
 
