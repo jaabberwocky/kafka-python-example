@@ -17,14 +17,15 @@ There is a lot more complexity under the hood, and I suggest you read the [offic
 Download the 2.0.0 release and un-tar it.
 	
 > tar -xzf kafka_2.11-2.0.0.tgz
-> cd kafka_2.11-2.0.0
 
 Also, install pip requirements by running `pip install -r requirements.txt`
 
 ## Step 2: Start the server
 
 Kafka uses ZooKeeper so you need to first start a ZooKeeper server.
-	
+
+> cd kafka_2.11-2.0.0	
+
 > bin/zookeeper-server-start.sh config/zookeeper.properties
 
 
