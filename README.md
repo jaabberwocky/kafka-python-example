@@ -11,6 +11,10 @@ Common use-cases:
 - messaging between applications, where you can have applications "talk" to each using messages
 - data ETL from source systems to target destinations, thereby processing information on a *streaming* basis, rather than in batches as with your traditional ETL jobs
 
+![kafka architecture](https://www.confluent.io/wp-content/uploads/Screenshot-2017-07-19-19.14.28-1024x626.png)
+
+* From [Confluent.io](https://www.confluent.io/blog/apache-kafka-for-service-architectures/)*
+
 There is a lot more complexity under the hood, and I suggest you read the [official docs](https://kafka.apache.org/documentation/) for more information.
 
 ## Step 1: Download the distribution
