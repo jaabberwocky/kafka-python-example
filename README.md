@@ -4,7 +4,9 @@ Using Java/Scala to work with Kafka is hard (especially for someone like me). *T
 
 ## What is Kafka?
 
-Kafka is a distributed messaging system. The architecture is a publish-subscribe model, where **consumers** read messages from **topics** that they have subscribed, where the messages are sent by **producers**. 
+Kafka is a distributed messaging system. It is at the core of many production systems in places such as Uber and LinkedIn (who created Kafka).  
+
+The architecture is a publish-subscribe model, where **consumers** read messages from **topics** that they have subscribed, where the messages are sent by **producers**. 
 
 Common use-cases: 
 
@@ -47,7 +49,7 @@ See list of topics using the following command:
 
 > bin/kafka-topics.sh --list --zookeeper localhost:2181 test
 
-## Step 4: 
+## Step 4: Run consumer and producer
 
 In separate command shells, run the following:
 
@@ -64,3 +66,12 @@ Producer of messages. Key in any valid string to send. Type "quit" to exit.
 
 You should now see the shell running `consumer.py` displaying the messages from Kafka!
 
+
+## Step 5: Tear things down
+
+> bin/kafka-server-stop.sh
+
+> bin/zookeeper-server-stop.sh
+
+
+This would terminate both server processes.
